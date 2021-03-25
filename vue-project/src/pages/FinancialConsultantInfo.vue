@@ -81,13 +81,21 @@
             机构联系电话:<span>0989-22312</span>
           </div>
         </div>
+        <tpad-table class="tpad-table"
+        :Titile="title"
+        >
+          <p></p>
+        </tpad-table>
     </div>
 </template>
 
 <script>
+import TpadTable from '../components/TpadTable.vue'
 export default {
+  components:{TpadTable},
   data () {
     return {
+      title:'这里是主页面标题',
       UserName:'用户名',
       UserAge:'年龄',
       Email:'邮箱',
@@ -136,11 +144,6 @@ export default {
         * 
         * 
         */
-      watch:{
-        msg2:function(){
-          return this.currentDate
-        }
-      },
      },
 
   methods:{
@@ -177,6 +180,14 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.tpad-table{
+  background-color: aqua;
+  position: absolute;
+  top:25%;
+  left: 20%;
+  height: 50%;
+  width: 50%;
+}
 .agree-table{
   margin: 20px;
   padding: 0;
