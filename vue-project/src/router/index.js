@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
 
 /**
  * 
@@ -8,7 +7,7 @@ import HelloWorld from '@/components/HelloWorld'
  * @argument '@/components/FinancialConsultantInfo'   组件地址
  * 
  */
-import FinancialConsultantInfo from '@/components/FinancialConsultantInfo'
+import FinancialConsultantInfo from '@/pages/FinancialConsultantInfo'
 
 Vue.use(Router)
 
@@ -17,12 +16,6 @@ export default new Router({
 
 
   routes: [
-    {
-      path: '/rrr',
-      name: 'HelloWorld',
-      component: HelloWorld
-    },
-
 /**
  * @argument 'path'         组件被访问路径
  * @argument 'name'         组件被访问的另一中形式
