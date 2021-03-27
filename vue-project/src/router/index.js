@@ -8,6 +8,7 @@ import Router from 'vue-router'
  * 
  */
 import FinancialConsultantInfo from '@/pages/FinancialConsultantInfo'
+import ShowProject from '@/pages/ShowProject.vue'
 
 Vue.use(Router)
 
@@ -26,6 +27,14 @@ export default new Router({
       path: '/',//理财顾问路由
       name: 'FinancialConsultantInfo',
       component: FinancialConsultantInfo
+    },
+/**
+ * 项目信息页面
+ */
+    {
+      path:'/showProject',
+      name:'ShowProject',
+      component: ShowProject
     }
 
   ]

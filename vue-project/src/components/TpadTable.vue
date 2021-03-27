@@ -4,19 +4,6 @@
         <div class="vessel-title">
                 <p>{{Titile}}</p>
                 <p>{{Titile}}</p>
-                <p>{{Titile}}</p>
-                <p>{{Titile}}</p>
-                <p>{{Titile}}</p>
-                <p>{{Titile}}</p>
-                <p>{{Titile}}</p>
-                <p>{{Titile}}</p>
-                <p>{{Titile}}</p>
-                <p>{{Titile}}</p>
-                <p>{{Titile}}</p>
-                <p>{{Titile}}</p>
-                <p>{{Titile}}</p>
-                <p>{{Titile}}</p>
-                <p>{{Titile}}</p>
         </div>
     </div>
 </template>

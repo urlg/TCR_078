@@ -86,6 +86,8 @@
         >
           <p></p>
         </tpad-table>
+
+        <button @click="linkShowProject()">点击跳转</button>
     </div>
 </template>
 
@@ -173,6 +175,13 @@ export default {
     isVisible(){
       this.isShow=true
     },
+
+    /**
+     * 页面跳转
+     */
+     linkShowProject() {
+       this.$router.push("showProject")
+     }
      
   }
 }
