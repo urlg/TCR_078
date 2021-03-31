@@ -180,7 +180,14 @@ export default {
      * 页面跳转
      */
      linkShowProject() {
-       this.$router.push("showProject")
+       this.$router.push({
+         name:'ShowProject',
+         params:{
+           UserName:'沙建斌',
+           idType:'010',
+           idNo:'642221199412203774',
+         }
+       })
      }
      
   }
