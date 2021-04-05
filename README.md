@@ -1,4 +1,6 @@
+远程资源前边1
 #分支情况如下
+远程资源中间
     mergeTest   
       : sh_branch@shajianbin
       ： sh_branch@yanglin
@@ -13,37 +15,3 @@
 
       afafdf
 
-
-
-      vbgfh
-      h
-      g
-      gh
-      dh
-      yrtsg
-      s
-      gre
-      g
-
-      ergesr
-      sergsergseg
-      ersg
-
-      ggergs
-      eg
-      g
-      sg
-      srg
-      grgr
-      gse
-      gsergsergse
-
-
-
-
-
-      g
-      srgsegers
-      g
-      srgserg
-      :：
