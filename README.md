@@ -8,3 +8,7 @@
 
 
 		这里是sh_branch@shajianbin进行更改的时候，sh_branch@yanglin也在进行更改
+
+
+
+		解决冲突的原因:当本地资源与远程资源有冲突时，此时当pull 或者 push的时候本地文件会被标记。:
