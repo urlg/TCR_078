@@ -9,6 +9,7 @@ import Router from 'vue-router'
  */
 import FinancialConsultantInfo from '@/pages/FinancialConsultantInfo'
 import ShowProject from '@/pages/ShowProject.vue'
+import StoreTest from '@/pages/storeTest.vue'
 
 Vue.use(Router)
 
@@ -35,6 +36,14 @@ export default new Router({
       path:'/showProject',
       name:'ShowProject',
       component: ShowProject
+    },
+    /**
+ * 测试store
+ */
+     {
+      path:'/storeTest',
+      name:'StoreTest',
+      component: StoreTest
     }
 
   ]

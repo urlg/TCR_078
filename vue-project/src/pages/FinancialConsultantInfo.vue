@@ -17,6 +17,7 @@
         <option>DP0004</option>
        </select>
 
+<!-- object使用方式 -->
       <!-- 表格 -->
        <table border="1" class="agree-table">
 
@@ -88,6 +89,9 @@
         </tpad-table>
 
         <button @click="linkShowProject()">点击跳转</button>
+        <div>
+          <p v-model="isActiveList">表格数据：{{isActiveList}}</p>
+        </div>
     </div>
 </template>
 
@@ -109,11 +113,12 @@ export default {
       isShowCus:'',
       isShowBran:'',
       showId:'',
+      isActiveList :[],
 
       arryMap:[
-        {UserName:'李小刚',UserAge:23,Email:'1400121424@qq.com',Phone:'13639572915',Adress:'北京市海淀区'},
-        {UserName:'李小刚',UserAge:23,Email:'1400121424@qq.com',Phone:'13639572915',Adress:'北京市海淀区'},
-        {UserName:'李小刚',UserAge:23,Email:'1400121424@qq.com',Phone:'13639572915',Adress:'北京市海淀区'}
+        {UserName:'李小刚',UserAge:23,Email:'1400@qq.com',Phone:'13639572915',Adress:'北京市海淀区'},
+        {UserName:'李小刚',UserAge:24,Email:'1500@qq.com',Phone:'13639572915',Adress:'上海市普陀区'},
+        {UserName:'李小刚',UserAge:25,Email:'1400121424@qq.com',Phone:'13639572915',Adress:'宁夏银川市'}
       ],
 
       arryMap1:[
@@ -139,7 +144,7 @@ export default {
      */
      computed:{
        msg1:function(){
-         return this.currentDate
+         return this.currentDate;
        },
        /**
         * 观察属性watch()----暂时没有理解
@@ -147,6 +152,9 @@ export default {
         * 
         */
      },
+            created(){
+                this.isActiveListFuntion()
+       },
 
   methods:{
 
@@ -180,14 +188,30 @@ export default {
      * 页面跳转
      */
      linkShowProject() {
+       //this.$store.state.persion = '沙建斌store';
        this.$router.push({
-         name:'ShowProject',
+         name:'StoreTest',
          params:{
            UserName:'沙建斌',
            idType:'010',
            idNo:'642221199412203774',
          }
        })
+     },
+
+     isActiveListFuntion(){
+       var i ;
+       var object = new Object();
+       for(i=0;i<this.arryMap.length;i++){
+         object = {};
+          object.UserName = this.arryMap[i].UserName;
+          object.UserAge = this.arryMap[i].UserAge;
+          object.Email = this.arryMap[i].Email;
+          object.Phone = this.arryMap[i].Phone;
+          object.Adress = this.arryMap[i].Adress;
+
+          this.isActiveList.push(object);
+       }
      }
      
   }

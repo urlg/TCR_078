@@ -3,6 +3,8 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+//导入store
+import store from './store'
 
 Vue.config.productionTip = false
 
@@ -10,6 +12,7 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
+  store,//注入,组件中可以使用 this.$store 获取
   components: { App },
   template: '<App/>'
 })
